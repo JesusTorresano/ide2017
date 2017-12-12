@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6987dca0-37ec-4be1-8690-99ae00977547" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignnment3/color.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignnment3/trumpfamily.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/week2/csv.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ide2017.iml" afterPath="$PROJECT_DIR$/.idea/ide2017.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignnment3/Assignment3.html" afterPath="$PROJECT_DIR$/Assignnment3/Assignment3.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -159,8 +155,8 @@
       <file leaf-file-name="Assignment3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assignnment3/Assignment3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="422" column="0" lean-forward="true" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
+            <state relative-caret-position="86">
+              <caret line="76" column="114" lean-forward="true" selection-start-line="76" selection-start-column="114" selection-end-line="76" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -218,8 +214,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="241" />
-    <option name="y" value="929" />
+    <option name="x" value="127" />
+    <option name="y" value="140" />
     <option name="width" value="1324" />
     <option name="height" value="502" />
   </component>
@@ -333,15 +329,15 @@
       <workItem from="1512893652759" duration="13666000" />
       <workItem from="1512983967339" duration="14082000" />
       <workItem from="1513026923605" duration="642000" />
-      <workItem from="1513074888274" duration="5945000" />
+      <workItem from="1513074888274" duration="6710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89217000" />
+    <option name="totallyTimeSpent" value="89982000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="241" y="929" width="1324" height="502" extended-state="0" />
+    <frame x="127" y="140" width="1324" height="502" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26283988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -782,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assignnment3/Assignment3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="422" column="0" lean-forward="true" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
+        <state relative-caret-position="86">
+          <caret line="76" column="114" lean-forward="true" selection-start-line="76" selection-start-column="114" selection-end-line="76" selection-end-column="114" />
           <folding />
         </state>
       </provider>
