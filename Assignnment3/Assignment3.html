@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Assignment 3</title>   <!--Name that appears on the slip of the new window -->
+
+    <h1 class="headerTitle" align="center" style="font-size:40px; color:purple">    Assignment 3 </h1>
+    <h3 class="headerTitle" align="center" style="font-size:20px; color:purple">    by Tycho Canter and Jesus Torresano </h3>
+
+    <style>
+
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 5px;
+        }
+
+        .node text { font: 21px fantasy; }
+
+
+        .link {
+            fill: none;
+            stroke: #00BFFF;
+            stroke-width: 5px;
+        }
+
+        #TychoPlot .link {
+            fill: none;
+            stroke: #666;
+            stroke-width: 1.5px;
+        }
+
+        #TychoPlot #parent {
+            fill: green;
+        }
+
+        #TychoPlot .link.parent {
+            stroke: green;
+        }
+
+        #TychoPlot .link.divorced {
+            stroke-dasharray: 0,2 1;
+            stroke-width: 2px;
+        }
+
+        #TychoPlot .link.married {
+            stroke-width: 2px;
+        }
+
+        #TychoPlot circle {
+            fill: #ccc;
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        #TychoPlot text {
+            font: 10px sans-serif;
+            font-weight: bold;
+            pointer-events: none;
+            text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+        }
+
+    </style>
+
+</head>
+
+<body style="vertical-align: middle; background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #E3AE37 40%, transparent 60%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #E3AE37 62.5%, #5d4a1f 100%);">
+
+
+<h1 style="font: 100px courier; vertical-align: middle; text-align: center;"> MEET THE TRUMP'S</h1>
+
+
+<img src="trumpfamily.png" class="svg" alt="Trump_family" style="border:5px groove purple; height: auto; width:auto;">
+
+<h1 style="font: 50px courier; vertical-align: middle; text-align: center;"> Interactive TRUMP'S FAMILY TREE </h1>
+<div id="Results">
+
+</div>
+
+
+<!-- load the d3.js library -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+    var treeData = [
+        {
+            "name": "Donald Trump",
+            "parent": "null",
+            "type": "Patriarch",
+            "marital_status": "Married: with Melania Trump",
+            "age": "71",
+            "web_name": "Donald Trump",
+            "flag": "america.png",
+            "children": [
+                {
+                    "name": "Ivana Trump (1st-wife)",
+                    "parent": "Donald Trump",
+                    "type": "Trump's_1st_wife",
+                    "marital_status": "Divorced",
+                    "age": "68",
+                    "web_name": "Ivana Trump",
+                    "flag": "czech.png",
+                    "children": [
+                        {
+                            "name": "Donald Trump Jr.",
+                            "parent": "Ivana Trump (1st-wife)",
+                            "type": "Trump's_Ivana's_offspring",
+                            "marital_status": "Married: with Vanessa Trump",
+                            "age": "40",
+                            "web_name": "Donald Trump Jr.",
+                            "flag": "america.png",
+                            "children": [
+                                    {
+                                        "name": "Kai Madison Trump",
+                                        "type": "Trump's_Ivana's_grandchild",
+                                        "marital_status": "Single",
+                                        "age": "10",
+                                        "web_name": "Kai Madison Trump",
+                                        "flag": "america.png"
+                                    },
+                                    {
+                                        "name": "Donald III Trump",
+                                        "type": "Trump's_Ivana's_grandchild",
+                                        "marital_status": "Single",
+                                        "age": "8",
+                                        "web_name": "Donald III Trump",
+                                        "flag": "america.png"
+                                    },
+                                    {
+                                        "name": "Chloe Sophia Trump",
+                                        "type": "Trump's_Ivana's_grandchild",
+                                        "marital_status": "Single",
+                                        "age": "3",
+                                        "web_name": "Chloe Sophia Trump",
+                                        "flag": "america.png"
+                                    },
+                                    {
+                                        "name": "Tristan Milos Trump",
+                                        "type": "Trump's_Ivana's_grandchild",
+                                        "marital_status": "Single",
+                                        "age": "5",
+                                        "web_name": "Tristan Milos Trump",
+                                        "flag": "america.png"
+                                    },
+                                    {
+                                        "name": "Spencer Frederick Trump",
+                                        "type": "Trump's_Ivana's_grandchild",
+                                        "marital_status": "Single",
+                                        "age": "4",
+                                        "web_name": "Spencer Frederick Trump",
+                                        "flag": "america.png"
+                                    }
+                                ]
+                        },
+                        {
+                            "name": "Ivanka Trump",
+                            "parent": "Ivana Trump (1st-wife)",
+                            "type": "Trump's_Ivana's_offspring",
+                            "marital_status": "Married: with Jared Kushner",
+                            "age": "36",
+                            "web_name": "Ivanka Trump",
+                            "flag": "america.png",
+                            "children": [
+                                    {
+                                        "name": "Arabella Rose Kushner",
+                                        "type": "Trump's_Ivana's_grandchild",
+                                        "marital_status": "Single",
+                                        "age": "6",
+                                        "web_name": "Arabella Rose Kushner",
+                                        "flag": "america.png"
+                                    },
+                                    {
+                                        "name": "Joseph Frederick Kushner",
+                                        "type": "Trump's_Ivanna's_grandchild",
+                                        "marital_status": "Single",
+                                        "age": "4",
+                                        "web_name": "Joseph Frederick Kushner",
+                                        "flag": "america.png"
+                                    },
+                                    {
+                                        "name": "Theodore James Kushner",
+                                        "type": "Trump's_Ivana's_grandchild",
+                                        "marital_status": "Single",
+                                        "age": "1",
+                                        "web_name": "Theodore James Kushner",
+                                        "flag": "america.png"
+                                    }
+                                ]
+                        }
+                        ,
+                        {
+                            "name": "Eric Trump",
+                            "parent": "Ivana Trump (1st-wife)",
+                            "type": "Trump's_Ivana's_offspring",
+                            "marital_status": "Married: with Lara Trump",
+                            "web_name": "Eric Trump",
+                            "age": "33",
+                            "flag": "america.png"
+
+                        }
+                    ]
+                },
+
+
+
+                {
+                    "name": "Marla Maples (2nd-wife)",
+                    "parent": "Donald Trump",
+                    "type": "Trump's_2nd_wife",
+                    "marital_status": "Divorced",
+                    "age": "54",
+                    "web_name": "Marla Maples",
+                    "flag": "america.png",
+                    "children": [
+                        {
+                            "name": "Tiffany Trump",
+                            "type": "Trump's_Marla's_offspring",
+                            "marital_status": "Relationship: with Ross Mechanic",
+                            "age": "24",
+                            "web_name": "Tiffany Trump",
+                            "flag": "america.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "Melania Trump (3rd-wife, Actual)",
+                    "parent": "Donald Trump",
+                    "type": "Trump's_actual_wife",
+                    "marital_status": "Married: with Donald Trump",
+                    "age": "47",
+                    "web_name": "Melania Trump",
+                    "flag": "slovenia.png",
+                    "children": [
+                        {
+                            "name": "Barron Trump",
+                            "type": "Trump's_Melania's_offspring",
+                            "marital_status": "Married: with Donald Trump",
+                            "age": "11",
+                            "web_name": "Barron Trump",
+                            "flag": "america.png"
+                        }
+                    ]
+                }
+
+
+            ]
+        }
+    ];
+
+
+    // ************** Generate the tree diagram  *****************
+    var margin = {top: 20, right: 200, bottom: 20, left: 180},
+        /* width = 960 - margin.right - margin.left,
+        height = 500 - margin.top - margin.bottom;*/
+        width = 1010 - margin.right - margin.left;
+        height = 500 - margin.top - margin.bottom;
+
+    var i = 0;
+
+    var tree = d3.layout.tree()
+        .size([height, width]);
+
+    var diagonal = d3.svg.diagonal()
+        .projection(function(d) { return [d.y, d.x]; });
+
+    var svg = d3.select("body").select("#Results").append("svg")
+
+        .attr("width", width + margin.left  + margin.left)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    root = treeData[0];
+
+    update(root);
+
+    function update(source) {
+
+        // Compute the new tree layout.
+        var nodes = tree.nodes(root).reverse(),
+            links = tree.links(nodes);
+
+        // Normalize for fixed-depth.
+        nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+        // Declare the nodesâ€¦
+        var node = svg.selectAll("g.node")
+            .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+        // Enter the nodes.
+        var nodeEnter = node.enter().append("g")
+            .attr("class", "node")
+            // .attr("class", function(d) { return "node " + d.type; })
+            .attr("transform", function(d) {
+                return "translate(" + d.y + "," + d.x + ")"; })
+            .on("mouseover", function(d) { d3.select(this).style("fill", "red"); })
+            //.on("mouseout", function(d) { d3.select(this).style("fill", "black"); })
+            .on('mousemove',function(d){
+                    d3.select('#event-text')
+                        .text(d.type);
+                    d3.select('#mar_stat')
+                    .text(d.marital_status);
+                    d3.select('#edad')
+                    .text(d.age);
+            })
+            .on('mouseout',function(d){
+                d3.select('#event-text')
+                    .text("??");
+                d3.select('#mar_stat')
+                    .text("??");
+                d3.select('#edad')
+                    .text("??");
+                d3.select(this).style("fill", "black");
+            })
+
+            .on("dblclick", function(d) {
+                var newWindow = window.open('');
+                newWindowRoot = d3.select(newWindow.document.body)
+                    .attr("width","1060px")
+                    .attr("margin","50px auto");
+                newWindow.location.assign("http://en.wikipedia.org/wiki/"+d.web_name, '_blank');
+
+
+            });
+
+
+
+        nodeEnter.append("circle")
+            .attr("r", 10)
+            .style("fill", function(d) { nodeEnter.append("image")
+                .attr("xlink:href", function(d){ return d.flag;})
+                .attr('width', 30)
+                .attr('height', 30);
+            });
+            // INSERT IMAGE
+
+        /*append("circle")
+            .attr("r", 10)
+            .style("fill", "#fff")*/
+
+
+
+        /*nodeEnter.append("image")
+        .attr("xlink:href", "https://da.wikipedia.org/wiki/Barron_William_Trump#/media/File:Barron_Trump_2016.png");*/
+
+
+
+        nodeEnter.append("text")
+            .attr("x", function(d) {
+                return d.children || d._children ? -20 : 20; })
+            .attr("dy", ".35em")
+            .attr("text-anchor", function(d) {
+                return d.children || d._children ? "end" : "start"; })
+            .text(function(d) { return d.name; })
+            .style("fill-opacity", 1);
+
+        // Declare the linksâ€¦
+        var link = svg.selectAll("path.link")
+            .data(links, function(d) { return d.target.id; });
+
+        // Enter the links.
+        link.enter().insert("path", "g")
+            .attr("class", "link")
+            .attr("d", diagonal);
+
+    }
+
+    d3.select("#Results").attr("align", "center");
+
+
+</script >
+
+
+<div id="Motivation" style=" border:5px groove purple; height: auto; width:auto;opacity: 1">
+    <br/>
+    <p style="font: 30px fantasy;" >&nbsp; &nbsp; &nbsp; &nbsp; Relation with Donald Trump: <span id="event-text">Nothing</span></p>
+    <p style="font: 30px fantasy;" >&nbsp; &nbsp; &nbsp; &nbsp; Marital status: <span id="mar_stat">Nothing</span></p>
+    <p style="font: 30px fantasy;" >&nbsp; &nbsp; &nbsp; &nbsp; Age: <span id="edad">Nothing</span></p>
+</div>
+
+<h1 style="font: 50px courier; vertical-align: middle; text-align: center;"> MOTIVATION AND TREE-MAP INSTRUCTIONS</h1>
+
+<p style="font: 25px courier; vertical-align: middle; text-align: justify;">
+    &nbsp; &nbsp; &nbsp;Family is what this assignment is about; but not any kind of family, Trump's family.  <br/>
+    &nbsp; &nbsp; &nbsp;How do we handle the high amount of progeny of this <em>"HUUUUGE family!" </em>?
+    <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp; Simple, we have created an intuitive, easy and interactive family tree. <br/>
+    &nbsp; &nbsp; &nbsp; This web-page has been created so that so that you feel like one more member <br/>
+    &nbsp; &nbsp; of the Trump family, surrounded by golden background.
+    <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp; This interactive tool is composed of two well-defined areas:<br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - Area where the family tree is. <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - Box for displaying text info about selected members of the family. <br/>
+    <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp; Regarding the design, we used blue colors for the main structure of the family tree, <br/>
+    &nbsp; &nbsp;  and we used red for the selection (when mousing over each member of the family). <br/>
+    &nbsp; &nbsp;  When mousing over each member, the user is offered in the box below the tree the following info: <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - Relationship with Donald trump of the selected member. <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - Marital status of the selected member. <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - Age of the selected member. <br/>
+    <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp; Furthermore, we included a double click function (over each member) that links to the <br/>
+    &nbsp; &nbsp;  corresponding selected member "wikipedia" page.<br/>
+    <br/>
+
+</p>
+
+<div style="background-image: url(americanflag2.jpg); border:5px groove purple; height: auto; width:auto;opacity: 1">
+    <br/>
+    <br/><br/><br/><br/><br/>
+
+</div>
+
+<h1 style="font: 50px courier; vertical-align: middle; text-align: center;"> ALTERNATIVE PLOT VERSION</h1>
+
+<div id="TychoPlot">          </div>
+
+<h1 style="font: 40px courier; vertical-align: middle; text-align: center;"> INSTRUCTIONS OF THE ALTERNATIVE PLOT VERSION</h1>
+
+<div id="CoolPlot" style=" border:5px groove purple; height: auto; width:auto;opacity: 1">
+    <p style="font: 25px courier; vertical-align: middle; text-align: justify;">
+
+        &nbsp; &nbsp; &nbsp; We also wanted to make a tree that included the relation of both children toward their children<br>
+        &nbsp; &nbsp;and back to their respective parent. In this way you can get an overview of the whole familly.<br>
+        &nbsp; &nbsp;We could not figure out a good way to make a static tree depicting this. To work around this we adopted an<br>
+        &nbsp; &nbsp;interactive tree example and edited the JSON data and the script to fit our project.<br>
+        &nbsp; &nbsp;It is not the clearest familly tree but we believe it gets the job done.<br>
+
+        <br/>
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - The green lines point toward children. <br/>
+        <br/>
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - The black lines point toward a person's partner. <br/>
+        <br/>
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; -  The black dotted lines show that these partners are divorced and no long married. <br/>
+        <br/>
+         &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - You an drag the nodes the get a better overview of the relationships. <br/>
+        <br/>
+
+    </p>
+
+
+
+</div>
+
+<div id="Future" style=" border:5px groove purple; height: auto; width:auto;opacity: 1">
+
+<h1 style="font: 50px courier; vertical-align: middle; text-align: center;"> FUTURE WORK</h1>
+
+<p style="font: 25px courier; vertical-align: middle; text-align: justify;">
+    &nbsp; &nbsp; &nbsp; Interactive tools can always be improved.<br/>
+    &nbsp; &nbsp; &nbsp; The following are ideas that we have thought about:<br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - Add a button to introduce new members to the family. <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - Hiding related nodes when clicking on the parent node (for clarity) <br/>
+    <br/>
+    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; - Improve the design. <br/>
+
+    <br/>
+    Notes: Ideas taken from <a href="http://www.d3noob.org/2014/01/tree-diagrams-in-d3js_11.html" > d3noob.org</a> and <a href="http://justincy.github.io/d3-pedigree-examples/descendants.html " > justincy.github</a>. <br/>
+</p>
+
+</div>
+
+<div  style="background-image: url(americanflag2.jpg); border:5px groove purple; height: auto; width:auto;opacity: 1">
+    <br/>
+    <br/><br/><br/><br/><br/>
+
+
+</div>
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+   //  http://blog.thomsonreuters.com/index.php/mobile-patent-suits-graphic-of-the-day/
+        d3.json("trump_family2.json", function(error, graph) {
+            if (error) throw error;
+            var links = graph.links;
+
+            var nodes = {};
+
+            // Compute the distinct nodes from the links.
+            links.forEach(function(link) {
+                link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
+                link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
+            });
+
+            var width = 1300,
+                height = 700;
+
+            var force = d3.layout.force()
+                .nodes(d3.values(nodes))
+                .links(links)
+                .size([width, height])
+                //	.linkDistance(100)
+                .linkDistance(function(node) {
+                    console.log(node.type)
+                    return node.type == "children" ? 400 : 50;
+                })
+                .charge(function(node) {
+                    return node.type == "children" ? -50 : -2000;
+                })
+                .on("tick", tick)
+                .start();
+
+            var svgOne = d3.select("body").select("#TychoPlot") .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            // Per-type markers, as they don't inherit styles.
+            svgOne.append("defs").selectAll("marker")
+                .data(["married", "divorced", "parent"])
+                .enter().append("marker")
+                .attr("id", function(d) { return d; })
+                .attr("viewBox", "0 -5 10 10")
+                .attr("refX", 15)
+                .attr("refY", -1.5)
+                .attr("markerWidth", 6)
+                .attr("markerHeight", 6)
+                .attr("orient", "auto")
+                .append("path")
+                .attr("d", "M0,-5L10,0L0,5");
+
+            var path = svgOne.append("g").selectAll("path")
+                .data(force.links())
+                .enter().append("path")
+                .attr("class", function(d) { return "link " + d.type; })
+                .attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
+
+            var circle = svgOne.append("g").selectAll("circle")
+                .data(force.nodes())
+                .enter().append("circle")
+                .attr("r", 10)
+                .call(force.drag);
+
+            var text = svgOne.append("g").selectAll("text")
+                .data(force.nodes())
+                .enter().append("text")
+                .attr("x", 8)
+                .attr("y", ".31em")
+                .text(function(d) { return d.name; });
+
+            // Use elliptical arc path segments to doubly-encode directionality.
+            function tick() {
+                path.attr("d", linkArc);
+                circle.attr("transform", transform);
+                text.attr("transform", function(d){
+                    var x = d.x > width/2 ? d.x : d.x - 50;
+                    //var x = d.x - width/(d.x * 10);
+                    return "translate(" + x + "," + d.y + ")";
+                });
+            }
+
+            function linkArc(d) {
+                var dx = 0,
+                    dy = 0,
+                    dr = 200 ;
+                return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
+            }
+
+            function transform(d) {
+                //var x = d.x >
+                return "translate(" + d.x + "," + d.y + ")";
+            }
+
+        });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
