@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+
+      <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+      <script src="https://d3js.org/topojson.v3.min.js"></script>
+      <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+      <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+      <script src="Assignment5.js"></script>
+      <meta name="viewport" content="width=device-width">
+
+    <title>Assignment 5</title>
+
+
+<style>
+              body {
+              max-width: 1900px;
+              min-width: 1900px;
+              max-height: 95%;
+              min-height: 95%;
+              }
+
+
+              #headerTitle {
+              font-family: Courier,sans-serif;
+                  text-align:center;
+              color:purple;
+                  background-color:lightyellow;
+              padding:5px;
+              height: 150px;
+              width: 100%;
+              position: relative;
+                  border-style:dotted;
+              }
+
+
+              #section {
+              font-family: Arial,sans-serif;
+                  font-size:20px;
+              width:80%;
+              float:left;
+              padding:10px;
+              margin-left: 5%;
+              margin-right: 20%;
+              background-color: white;
+              text-align: justify;
+
+              }
+
+
+              #area_graph {
+              font-family: Courier,sans-serif;
+              width:100%;
+              float:left;
+              padding:10px;
+              background-color: lightyellow;
+              border-size:2px;
+              border-style:dotted;
+              }
+
+
+              #area_graph2 {
+                  font-family: Courier,sans-serif;
+                  width:100%;
+                  float:left;
+                  padding:10px;
+                  background-color: lightyellow;
+                  border-size:2px;
+                  border-style:dotted;
+              }
+
+
+              #pca2{
+                  margin-left:20px;
+              }
+              #hand2 {
+                  margin-left:30px;
+              }
+              #hand2, #pca2 {
+                  float: left;
+              }
+
+              #pca {
+              margin-left:30px;
+              }
+              #hand {
+              margin-left:30px;
+              }
+              #hand, #pca {
+              float: left;
+              }
+              rect {
+              fill: none;
+              pointer-events: all;
+              }
+
+
+              circle {
+              fill: white;
+              stroke: black;
+              stroke-width: 1.5px;
+              }
+
+
+              .axis path,
+              .axis line {
+                  fill: none;
+                  stroke: #000;
+                  shape-rendering: crispEdges;
+              }
+
+              .point {
+                  fill: steelblue;
+                  stroke: #000;
+              }
+
+        </style>
+  </head>
+
+  <body>
+
+
+  <div id="headerTitle">
+      <h1>    Assignment 5: "Crimes in San Francisco (EEUU) "</h1>
+      <h3>    by Tycho Canter and Jesus Torresano </h3>
+
+      <div id="nav"  style="font-family:Courier,sans-serif;font-size:15px;font-weight:bold;
+            background-color:lightyellow;float:left; position: relative; padding:8px 24px; border:1px solid purple;margin-left: 30%;">
+          <a href = "#introduction" > Introduction</a> |
+          <a href = "#plots" >Plots</a> |
+          <a href = "#data_discoveries" >Data Discoveries</a>
+
+      </div>
+  </div>
+
+
+
+
+  <div id="section">
+      <br/> <img src="crime.png" class="svg" alt="crime" align="middle" style="height: 300px; width:500px;">
+      <img src="crime.png" class="svg" alt="crime" align="middle" style="height: 300px; width:500px;">
+      <img src="crime.png" class="svg" alt="crime" align="middle" style="height: 300px; width:500px;"> <br/>
+
+    <h1 id = "introduction" style="font-family:Courier,sans-serif; " >Introduction </h1>
+    <p>
+
+        The City and County of San Francisco updates and publishes the SF Open Data that forms our main dataset. <br/> This dataset contains information about the type of crime, when and where the crime was committed, and the police district the crime was committed in. <br/>
+
+        Furthermore there is another dataset that contains the geographical coordinates of the police districts, <br/> this dataset also contains the population sizes for each district. This second set was used to plot the data into a map of San Francisco. <br/>
+
+        This visualisation aims to identify the change in the percentage of crimes resulting in arrests per year, <br/> as well as identify hotspots for particular crimes at particular hours in each district. <br/>
+
+    </p>
+
+
+      <br/> <img src="crime.png" class="svg" alt="crime" align="middle" style="height: 300px; width:500px;">
+      <img src="crime.png" class="svg" alt="crime" align="middle" style="height: 300px; width:500px;">
+      <img src="crime.png" class="svg" alt="crime" align="middle" style="height: 300px; width:500px;"> <br/>
+
+
+
+      <h1 id = "plots" style="font-family:Courier,sans-serif; " >Plots </h1>
+      <br/>
+      <h2 style="alignment: center; font-family:Courier,sans-serif;">
+          Number of crimes per police district
+      </h2>
+      <img src="map.png" alt="Number of crimes per police district" align="middle" style="height: 500px; width:700px;">
+
+<p>
+    In the previous map dark red means higher number of crimes and light red the opposite.
+</p>
+
+      <h2 style="alignment: center; font-family:Courier,sans-serif;">
+          Number of crimes per crime crime category
+
+
+      </h2>
+      <img src="g2.png" alt="Number of crimes per crime category" align="middle" style="height: 500px; width:1200px;">
+
+
+
+      <h2 style="alignment: center; font-family:Courier,sans-serif;">
+          Average percentage of crimes per year
+
+      </h2>
+      <img src="g1.png" alt="Average percentage of crimes per year" align="middle" style="height: 500px; width:1000px;">
+
+
+
+
+      <div id="crimes"> </div>
+
+
+
+      <br/> <img src="crime.png" class="svg" alt="crime" align="middle" style="height: 300px; width:500px;">
+      <img src="crime.png" class="svg" alt="crime" align="middle" style="height: 300px; width:500px;">
+      <img src="crime.png" class="svg" alt="crime" align="middle" style="height: 300px; width:500px;"> <br/>
+
+
+      <h1 id = "data_discoveries" style="font-family:Courier,sans-serif; " >Data discoveries </h1>
+
+      According to the senior fellow at <a href="http://www.ppic.org/publication/crime-trends-in-california/">PPIC</a>, Magnus Lofstrom California's violent crime rate increased by 3.7% in 2016, <br/>
+      however the trend is still low when comparing it to the previous years. We can confirm this fact with our third graph. <br/>
+      With our barplot we can say that the top three crimes in San Francisco are other offenses, larceny_theft and assault. <br/>
+      With the map we can very clearly see that most crimes are comitted in the southern police district and in the mission district. <br>
+      The district Park has one of the lowest despite it being right next to the mission district.<br>
+
+
+  </body>
+
+</html>
