@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6987dca0-37ec-4be1-8690-99ae00977547" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FinalProject/ProjectJT/img/arms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FinalProject/ProjectJT/img/buttons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FinalProject/ProjectJT/barplot2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FinalProject/ProjectJT/barplot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FinalProject/ProjectJT/barplot2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FinalProject/ProjectJT/tree.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FinalProject/ProjectJT/index.html" afterPath="$PROJECT_DIR$/FinalProject/ProjectJT/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FinalProject/ProjectJT/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="257" column="99" lean-forward="false" selection-start-line="257" selection-start-column="99" selection-end-line="257" selection-end-column="99" />
+            <state relative-caret-position="612">
+              <caret line="254" column="85" lean-forward="false" selection-start-line="254" selection-start-column="85" selection-end-line="254" selection-end-column="85" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -35,36 +35,6 @@
                 <element signature="n#style#0;n#div#1;n#div#10;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#5;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="barplot2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FinalProject/ProjectJT/barplot2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="303" column="9" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="303" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tree.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FinalProject/ProjectJT/tree.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="11" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="barplot.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FinalProject/ProjectJT/barplot.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -164,8 +134,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-289" />
-    <option name="y" value="128" />
+    <option name="x" value="151" />
+    <option name="y" value="56" />
     <option name="width" value="1384" />
     <option name="height" value="922" />
   </component>
@@ -316,15 +286,15 @@
       <workItem from="1515747182715" duration="200000" />
       <workItem from="1515751427412" duration="4748000" />
       <workItem from="1515772706109" duration="3405000" />
-      <workItem from="1516280448273" duration="14080000" />
+      <workItem from="1516280448273" duration="14402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222822000" />
+    <option name="totallyTimeSpent" value="223144000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-289" y="128" width="1384" height="922" extended-state="0" />
+    <frame x="151" y="56" width="1384" height="922" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25144508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -619,8 +589,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FinalProject/ProjectJT/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="257" column="99" lean-forward="false" selection-start-line="257" selection-start-column="99" selection-end-line="257" selection-end-column="99" />
+        <state relative-caret-position="612">
+          <caret line="254" column="85" lean-forward="false" selection-start-line="254" selection-start-column="85" selection-end-line="254" selection-end-column="85" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
