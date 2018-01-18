@@ -1,0 +1,63 @@
+[{
+  "name": "Christian I",
+  "class": "man",
+  "marriages":[{
+    "spouse": {
+      "name": "Dorethea of Brandenburg",
+      "class": "woman"
+    },
+    "children":[{
+      "name": "John",
+      "class": "man",
+      "marriages":[{
+        "spouse": {
+          "name": "Christine of Saxony",
+          "class": "woman"
+        },
+        "children":[{
+          "name": "Christian II",
+          "class": "man"
+        }]
+      }]
+    },
+      {
+          "name": "Frederik I",
+        "class": "man",
+        "spouse": {
+          "name": "Anne of Brandenburg",
+          "class": "woman"
+        },
+        "children":[{
+          "name": "Christian III",
+          "class": "man",
+          "marriages":[{
+            "spouse": {
+              "name": "Dorothea of Saxe-Lauenburg",
+              "class": "woman"
+            },"children":[{
+              "name": "Frederik II",
+              "class": "man",
+              "marriages":[{
+                "spouse": {
+                  "name": "Sophie of Mecklenburg",
+                  "class": "woman"
+                },"children":[{
+                  "name": "Christian IV",
+                  "class": "man",
+                  "marriages":[{
+                    "spouse": {
+                      "name": "Anne Catherine",
+                      "class": "woman"
+                    },"children":[{
+                      "name": "Frederik III",
+                      "class": "man"
+                    }]
+                  }]
+                }]
+              }]
+            }]
+          }]
+        }]
+      }]
+  }]
+}]

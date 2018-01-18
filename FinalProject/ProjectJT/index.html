@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Danish Royal Curiosities</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/animate.min.css" rel="stylesheet"> 
+	<link href="css/animate.css" rel="stylesheet" />	
+	<link href="css/style.css" rel="stylesheet">
+
+
+	  <!-- Style in the html is for the swapping cards in the  -->
+    <style>
+        .card-container {
+            cursor: pointer;
+            height: 150px;
+
+            position: relative;
+            width: 150px;
+        }
+        .card {
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+            width: 100%;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .side {
+            backface-visibility: hidden;
+            border-radius: 6px;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+        }
+        .card .back {
+            background: #eaeaed;
+            color: #0087cc;
+            line-height: 150px;
+            text-align: center;
+            transform: rotateY(180deg);
+        }
+
+
+
+	.tree {
+		width: 910px;
+		margin-left:15% ;
+
+	}
+
+
+
+		.linage {
+			fill: none;
+			stroke: #000;
+		}
+
+		.tree svg{
+			width: 100%
+		}
+
+		.marriage {
+			fill: none;
+			stroke: black;
+		}
+
+		.man {
+			background-color: #7ab4d6;
+			border-radius: 5px;
+			border: 1px solid #000000;
+			height: 40px;
+		}
+
+		.woman {
+			background-color: #ff9ec0;
+			border-radius: 5px;
+			border: 1px solid #000000;
+			height: 40px;
+		}
+
+		.emphasis {
+			font-style: italic;
+		}
+
+		.nodeText{
+			font: 10px Tahoma;
+		}
+
+		.man P{
+			padding-top: 5%;
+			vertical-align: middle;
+		}
+		.woman P{
+			padding-top: 5%;
+		}
+
+
+
+
+
+
+		.rectangle {
+			fill: steelblue;
+		}
+		.rectangle:hover {
+			fill: orange;
+		}
+		.axis {
+			font: 10px sans-serif;
+		}
+
+		.axis path,
+		.axis line {
+			fill: none;
+			stroke: #000;
+			shape-rendering: crispEdges;
+		}
+	</style>
+  </head>
+  <body>
+	<!-- Navigation -->
+    <div id="navigation">
+        <nav class="navbar navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="row">
+				    <div class="col-md-3">
+						<div class="site-logo">
+							<a href="index.html" class="brand">Scroll down </a>
+						</div>
+				    </div>					  
+
+					<div class="col-md-9">	 
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+								<i class="fa fa-bars"></i>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="menu">
+							<ul class="nav navbar-nav navbar-right">
+								  <li class="active"><a href="#home">Home</a></li>
+								  <li><a href="#about">Intro</a></li>
+								   <li><a href="#gorm">Gorm</a></li>
+								  <li><a href="#estridsen">Estridsen</a></li>
+								<li><a href="#oldenborg">Oldenborg</a></li>
+								<li><a href="#glucksborg">Glucksborg</a></li>
+                                <li><a href="#quiz">Quiz</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+						<!-- /.Navbar-collapse -->		 
+					</div>
+				</div>
+			</div>
+			<!-- /.container -->
+		</nav>
+    </div> 
+    <!-- /Navigation --> 
+	
+	<div id="home">
+		<div class="slider">
+			<img src="img/intro.jpg" class="img-responsive" />
+		</div>
+	</div>
+	
+	
+	<!-- Section: about -->
+    <section id="about">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+						<div class="section-heading text-center">
+							<h2 class="h-bold">Introduction</h2>
+							<div class="divider-header"></div>
+							<p>According to legend, King Dan was the first Danish king in the 4th century - thence the name Danmark, Dan's borders.
+							<br/> Since Gorm the Old times (936 a.c) til 2018, Denmark has always had a royal in power. There has been 8 royal dynasties in total: Gorm, Fairhair, Estridsen, Bjelbo, Pomerania, Palatinate-Neumarkt, Oldenburg and Glucksburg.
+								History can be considered as a large deck of cards, to which every year a new card is added.
+								As you scroll down through this website you will reveal curiosities from the oldest dynasty (Gorm) to the
+								most recent one (Glucksburg). <br/>
+							 </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">		
+			<div class="row">
+				<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+				<div class="col-md-6">
+					<img src="img/dummy1.jpg" alt="" class="img-responsive" />
+					<img src="img/cards2.png" alt="" class="img-responsive" />
+				</div>
+				</div>
+				<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+				<div class="col-md-6">		
+					<p>Danish Royals have occupied the throne for <strong>1082 years </strong>. The following graph shows the year percentage out of 1082 that the four main dynasties have been in power. </p>
+
+					Gorm Dynasty (936-1042) ----- 106 years in power
+					<div class="progress progress-striped active">
+					  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="9.8" aria-valuemin="0" aria-valuemax="100" style="width: 9.8%">
+						9.8%
+					  </div>
+					</div>
+
+					Estridsen Dynasty (1047-1375) and (1376–1412) ----- 364 years in power
+					<div class="progress progress-striped active">
+					  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="33.6" aria-valuemin="0" aria-valuemax="100" style="width: 33.6%">
+						33.6%
+					  </div>
+					</div>
+					Oldenburg Dynasty (1448-1863) ----- 415 years in power
+					<div class="progress progress-striped active">
+					  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="38.4" aria-valuemin="0" aria-valuemax="100" style="width: 38.4%">
+						38.4%
+					  </div>
+					</div>
+					Glucksburg Dynasty (1863-2018) ----- 155 years in power
+					<div class="progress progress-striped active">
+					  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="14.3" aria-valuemin="0" aria-valuemax="100" style="width: 14.3%">
+						14.3%
+					  </div>
+					</div>
+					<img src="img/deck.jpg" alt="" class="img-responsive" />
+				</div>
+				</div>
+
+			</div>		
+		</div>
+
+
+		<div>
+			<!-- Insert the bar plot there-->
+			<div class="container marginbot-50">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+							<div class="section-heading text-center">
+								<h3 class="h-bold">Interactive bar plot</h3>
+								<div class="divider-header"></div>
+								<p> Select one option on each pop-up menu in order to visualize the corresponding barplot. <br/>
+								The first pop-up offers: years in power of each monarch, age that the monarch had whe he or she
+								started the reign, age that the monarch had whe he or she
+									finished the reign, age that the monarch had whe he or she
+									died and average of all the monarchs inside each dynasty.
+
+									The second pop-up offers: all dynasties, and each individual dynasty. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+					<div class="container">
+						<div class="row">
+
+							<div id="drop" style="text-align: center;"> </div>
+							<div id ="drop_dynasty" style="text-align: center;"> </div>
+
+							<div id="royal_barplot" style="text-align:center;">
+								<svg> </svg>
+
+							</div>
+							<img src="img/arms.png" alt="" style="text-align: left;" class="img-responsive" />
+
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+			</div>
+
+
+
+
+
+		</div>
+
+	</section>
+	<!-- /Section: about -->
+	
+	<!-- Section: Gorm -->
+	<section id="gorm" class="home-section color-dark bg-white" style="background-image: url(./img/grey.jpg)">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+						<div class="section-heading text-center">
+							<h2 class="h-bold">Gorm Dinasty</h2>
+							<div class="divider-header"></div>
+							<p>The Gorm dynasty is also known as house of Knýtlinga (House of Canute's Descendants). <br/>
+							The kings in this house are definitely linked with an incipient unification of Denmark. </p>
+							<br/>
+							<img src="img/deck_card_gorm.png" alt="" class="img-responsive" />
+							<br/>
+							<br/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+					<br/>
+					<p> <strong> Christianity is introduced </strong> </p>
+					The son of Gorm the Old, Harold Bluetooth, completed building the Jelling Stones (a detail of one of the stones is shown on the right) in honour to his parents Gorm and Thyra.
+					The <strong> <a href="https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-monuments-at-jelling/the-jelling-stone/" target="_blank">Jelling stones </a></strong> are known as Denmark's birth certificate. <br/>
+					Although Christianity gained a foothold in Denmark during the reigh of Gorm the Old, it was not until his son Harold I Bluetooth was baptised in 965 that Christianity was set in Denmark as the main religion.
+					<br/>
+ 				</div>
+
+				<br/>
+
+				<div class="col-md-6">
+				<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+					<img src="img/jelling.jpg" alt="" class="img-responsive" />
+				</div>
+			</div>
+
+			</div>
+		</div>
+
+        <div class="container">
+            <div class="row">
+				<br/> <br/>
+
+                <div class="col-md-6">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+                        <img src="img/bluetooth.jpg" alt="" class="img-responsive" />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <br/> <br/>
+                    <p> <strong> Harold BLUETOOTH </strong> </p>
+                    Bluetooth is a wireless technology standard for exchanging data over short distances; the word bluetooth comes from the initial letters in nordic runes  of the danish king Harold Bluetooth.
+                </div>
+            </div>
+        </div>
+
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+					<br/>  <br/> <br/>
+					<p> <strong> Roskilde Cathedral origins </strong> </p>
+					Harold Bluetooth built a church in Roskilde, where he was later buried. The site where this primitive church was, is nowadays occupied by <strong> <a href="http://visit.roskildedomkirke.dk/english/" target="_blank">Roskilde Cathedral</a></strong>, where numerous memebers of the danish royal family are buried.
+					<br/>
+
+				</div>
+
+				<br/> <br/>
+
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+						<img src="img/roskilde.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+
+				<br/> <br/>
+
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+						<img src="img/bridge.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<p> <strong> An English Nightmare </strong> </p>
+					Sweyn Forkbeard, Harold Bluetooth's son, secretly hired a man called Palnatoke in order to kill his father. <br/>
+					Sweyn Forkbeard became king of England in 1030 after conquering a good deal of England. <br/>
+					The famous song <strong> <a href="https://www.youtube.com/watch?v=0uubCd-iqCo" target="_blank">"London Bridge is falling down" </a></strong> comes from the day the Londoners burnt the bridge over the river Thames to halt the advance of Sweyn and his viking crowd.
+
+				</div>
+
+				<br/>
+
+
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+
+				<br/> <br/>
+
+				<div class="col-md-6">
+					<p> <strong> A poisoned toast </strong> </p>
+					Intrigues are always floating around of royalty in the same way as in "Game of thrones". <br/>
+					Harold III Hardicanute, great great grandson of Gorm the Old, died suddenly at a wedding in London, where he proposed a toast to the bride and then dropped dead.
+					This resulted in the dissolution of Hardicanute III's realm, returning England to the Anglian kings.
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+						<img src="img/hiii.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+
+
+				<br/>
+
+
+
+			</div>
+		</div>
+
+		<!-- Insert the family tree of the gorm dinasty   -->
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+						<div class="section-heading text-center">
+							<h3 class="h-bold">Simplified Gorm Dynasty family tree</h3>
+							<div class="divider-header"></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+		<img src="img/d2.png" alt="" class="img-responsive" />
+		<div id="royal_tree_gorm" class="tree" style="border:solid"> </div>
+			<img src="img/d3.png" alt="" class="img-responsive" />
+		</div>
+
+
+
+
+
+	</section>
+
+	<!-- Section: estridsen -->
+	<section id="estridsen" class="home-section color-dark bg-white">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+						<div class="section-heading text-center">
+							<h2 class="h-bold">Estridsen Dinasty</h2>
+							<div class="divider-header"></div>
+							<p>Denmark's royal house was at its height during the time of the Valdemars, when her influence
+                            extended throughout most of the Baltic region, and again during the reign of Queen Margrete I. </p>
+							<br/>
+							<img src="img/deck_card_mi.png" alt="" class="img-responsive" />
+							<br/>
+							<br/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<br/> <br/>
+
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+						<img src="img/vi.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<br/>
+					<p> <strong> Copenhagen flourishes </strong> </p>
+					Valdemar I the Great developed a powerful Crown.
+					Due to the fact that he was paying tribute to the German Emperor Friedrich Barbarossa, he decided
+					to fortify Denmark's southern border and established several towns such as Havn (later Copenhagen) in case the germans stop the peaceful relationship with Denmark.
+					Around 1160, Valdemar the first gave to Absalon, Bishop of Roskilde, the control over Copenhagen.
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<br/> <br/>
+
+				<div class="col-md-6">
+					<br/>
+					<p> <strong> Danish flag origin </strong> </p>
+					The Danish flag or Danneborg is the oldest continuously used national flag.
+					According to the legend the flag fell from the sky at the Battle of Lyndanisse (in Estonia) in 1219 during the reign of Valdemar II the Victorious.
+					Around this period Denmark was larger than ever in terms of area.
+				</div>
+
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+						<img src="img/vii.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<br/> <br/>
+
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+						<img src="img/viv.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<br/>
+					<p> <strong> Knight of the Holy Sepulcre </strong> </p>
+					Valdemar IV Atterdag was a diligent politian but also a brutal man. The conduct of his army was savage, even for that time period.
+					This monarch visited the two popes: one in Rome and the other in Avignon. Valdemar decided to travel to Jerusalem and was made a Knight of the Holy Sepulcre before
+					returning to Denmark in 1371.
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="container">
+			<div class="row">
+				<br/>
+
+				<div class="col-md-6">
+
+					<p> <strong> Kalmar Union</strong> </p>
+					Destiny wanted Queen Margrete I to play an important role in history.
+					After the death of her husband and her only son, and as Denmark had at the time no provision that enabled a woman to rule in her own right, Margrete secured herself the position of Regent and was appointed as "Denmarks's Wife and Husband and Mighty Guardian of the Entire Realm".
+					In 1397 Margrete was able to unite the three Scandinavian kingdoms in a personal union under one crown for her successor Eric of Pomerania by the Kalmar Union.
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+						<img src="img/union.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<br/> <br/>
+
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+
+						<img src="img/olaf.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<p> <strong> The impostor son </strong> </p>
+					Prince Olaf of Denmark, son of Margrete I, died suddenly at the age of 16. According to some rumors coming from detractors of the Queen,
+					young Olaf did not died and escaped to Prussia. Some merchants found a young boy that looked like the dead prince, and decided that the young boy had to impersonate the rightful heir to the throne.
+					Queen Margaret heard the rumours and said that if the peasant boy could prove he was her son, she would gladly accept him. Fortunately, Margrete easily discovered that
+					the "candidate" was not her son, as he could not even speak danish. He was condemned to be burned at the stake with all the notes begging for mercy around his neck.
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<br/>
+
+
+
+
+
+		<!-- Insert the family tree of the estridsen dinasty-->
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+						<div class="section-heading text-center">
+							<h3 class="h-bold">Simplified Estridsen Dynasty family tree</h3>
+							<div class="divider-header"></div>
+							<p>    </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+
+		<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+			<img src="img/d2.png" alt="" class="img-responsive" />
+			<div id="royal_tree_estridsen" class="tree" style="border:solid"> </div>
+			<img src="img/d3.png" alt="" class="img-responsive" />
+		</div>
+
+
+
+
+	</section>
+
+	<!-- Section: Oldenburg -->
+	<section id="oldenborg" class="home-section color-dark bg-white" style="background-image: url(./img/grey.jpg)">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+						<div class="section-heading text-center">
+							<h2 class="h-bold">Oldenborg Dynasty</h2>
+							<div class="divider-header"></div>
+							<p>The Oldenburg dynasty is one of Europe's most influential royal houses, with branches that rule or have ruled in Denmark, Iceland, Greece, Norway, Russia, Sweden, Schleswig, Holstein, and Oldenburg. </p>
+							<br/>
+							<img src="img/deck_card_civ.png" alt="" class="img-responsive" />
+							<br/>
+							<br/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+				<br/>
+				<p> <strong> Party bloodbath </strong> </p>
+				In 1520 the danish king Christian II made the Swedes to surrender after a conflict.
+					Swedes representatives sworn their allegiance to Christian II during a bunch of festivities held at the
+					Stockholm Castle lasting several days. On the fourth day, the gates to the castle were closed and all
+					the detractors of Christian II were bestially executed. This event is known as the "Stockholm bloodbath".
+			</div>
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+						<img src="img/cii.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="container">
+			<br/> <br/>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+						<img src="img/lutero.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<br/>
+					<p> <strong> Lutheranism is here! </strong> </p>
+					Christian III was a pro-lutheran monarch that after "convincing" all the danish realms, he
+					had three Catholic bishops arrested and set Lutheranism as the main religion of the kingdom.
+					Martin Luther sent the king his congratulations.
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+<br>
+				<div class="col-md-6">
+					<br/>
+					<p> <strong> Building the realm </strong> </p>
+					Christian IV was among the greatest builders in the Nordic countries, and despite military disasters (i.e fiasco in the
+					Thirty Years war), economic recession, and marital horrors (i.e infidelities and affair intrigues), Christian stands as
+					a leading, loved and admired king.
+					He established towns that include Christianshavn, Kristiania (new Oslo) among many others. He also left his taste throughout Copenhagen,
+					such as Rosenborg Castle, Borsen, the round tower, and Trinitatis Church etc.
+
+				</div>
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+						<img src="img/civ.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+<
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<br/> <br/>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+						<img src="img/wine.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<br/>
+					<p> <strong> Let's drink again! </strong> </p>
+					The king Christian IV had a colorful personality, he was really keen on eating food and drinking wine.
+					During one party the monarch called 34 toasts, after which everyone had to empty their glasses.
+					As you can imaging, everyone ended completely drunk.
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<br>
+				<div class="col-md-6">
+					<br/> <br/>
+					<p> <strong> The first absolute monarch </strong> </p>
+					Christian V was the first to accede to the throne as absolute monarch. During his rule the
+					absolutist social structure was completed, and the power of the royal household was not under any threat.
+
+				</div>
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+						<img src="img/cv.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+				<
+
+			</div>
+		</div>
+
+
+
+
+		<div class="container">
+            <div class="row">
+				<br/> <br/>
+                <div class="col-md-6">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+                    <img src="img/cvii.jpg" alt="" class="img-responsive" />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <br/>
+                    <p> <strong> Christian VII's "hobbie" </strong> </p>
+                    The king’s uncontrollable urge to masturbate was a popular subject within the royal court. The gossip was confirmed when during a royal feast in Christiansborg, the king entered into the room with his pants around his ankles. <br/>
+                    Christian was psychologically unstable, possibly due to schizophrenia.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+				<br/> <br/>
+
+                <div class="col-md-6">
+                    <br/>
+                    <p> <strong> Queen Caroline Matilda and Dr.Struensee </strong> </p>
+                    Queen Caroline Matilda of Great Britain was the wife of Christian VII. Johann Friedrich Struensee was the king’s personal physician.
+                    s. The Queen and Struensee started an intense love that resulted in the pregnancy of Caroline Matilda; the baby that was borned from this relationship was princess Louise (she was accepted by Christian VII).
+                    Surprisingly during this popular affair, the king and queen relationship improved.
+                    This curiosity is shown in the 2012 movie "A Royal Affair" directed by Nikolaj Arcel.
+
+                </div>
+                <div class="col-md-6">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+                    <img src="img/cvii_affair.jpg" alt="" class="img-responsive" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+		<div class="container">
+			<div class="row">
+				<br>
+
+				<div class="col-md-6">
+				<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+					<img src="img/fvii.jpg" alt="" class="img-responsive" />
+				</div>
+			</div>
+
+				<div class="col-md-6">
+					<br/> <br/>
+					<p> <strong> Constitution </strong> </p>
+					The new Constitution for Denmark was signed by Frederik VII on 5 june 1849, bringing to an end 187 years
+					of absolute monarchy with the following words: "The King will not attend the Sovereign in Council unless
+					invited to do so".
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<!-- Insert the family tree of the oldenburg dinasty-->
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+						<div class="section-heading text-center">
+							<h3 class="h-bold">Simplified Oldenburg Dynasty family tree</h3>
+							<div class="divider-header"></div>
+							<p>    </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+		<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+			<img src="img/d2.png" alt="" class="img-responsive" />
+			<div id="royal_tree_oldenborg1" class="tree" style="border:solid"> </div>
+			<br/>
+			<div id="royal_tree_oldenborg2" class="tree" style="border:solid"> </div>
+
+			<img src="img/d3.png" alt="" class="img-responsive" />
+		</div>
+	</section>
+
+
+	<!-- Section: Glucksborg -->
+	<section id="glucksborg" class="home-section color-dark bg-white">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+						<div class="section-heading text-center">
+							<h2 class="h-bold">Glucksburg Dynasty</h2>
+							<div class="divider-header"></div>
+							<p>The Glücksburg dynasty complete name is Schleswig-Holstein-Sonderburg-Glücksburg, is a Dano-German branch of the House of Oldenburg. <br/> Margrethe II of Denmark, Harald V of Norway, Constantine II of Greece, Queen Sofía of Spain and Charles, Prince of Wales are patrilineal members of cadet branches of the Glücksburg dynasty. </p>
+							<br/>
+							<img src="img/deck_card_mii.png" alt="" class="img-responsive" />
+							<br/>
+							<br/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+				<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+					<img src="img/cx.jpg" alt="" class="img-responsive" />
+				</div>
+			</div>
+				<div class="col-md-6">
+					<br/>
+					<p> <strong> Resistance to occupation </strong> </p>
+					Christian X was a king that won popularity of the danish people by daily riding his horse through the streets of Copenhagen
+					during the Nazi occupation of Denmark. The King's ride became a symbol of Danish sovereignty. According to the story he used to wear the Star of David during this parades.
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<br/> <br/>
+
+
+				<div class="col-md-6">
+				<br/>
+				<p> <strong> An Olympic love </strong> </p>
+				When Crown Prince Frederick of Denmark travelled to Sydney, Australia, for the 2000 Summer Olympic Games, he could not have imagined that in a pub in Australia he would meet his future wife, Mary Donaldson.
+				Crown Prince Frederick later said he felt like she was his soulmate when they met.  After a few time dating Prince finally confessed who he was to Mary; and the rest is history.
+			</div>
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+						<img src="img/fandm.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<br/> <br/>
+				<div class="col-md-6">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+						<img src="img/miigrave.jpg" alt="" class="img-responsive" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<br/>
+					<p> <strong> Thinking in the afterlife </strong> </p>
+					Both Queen Margrette II and her husband Henrik already have a fancy coffin to lie in their final resting in peace.
+					The coffin consists of transparent glass and it stands on 3 columns of Danish granite, Faroese basalt and Greenland marble. <br/>
+					However, two shapes are made to lie inside the grave, so that the real royal bodies can be buried below.
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Insert the family tree of the glucksborg dinasty-->
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+						<div class="section-heading text-center">
+							<h3 class="h-bold">Simplified Glucksburg Dynasty family tree</h3>
+							<div class="divider-header"></div>
+							<p>    </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+
+
+		<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+			<img src="img/d2.png" alt="" class="img-responsive" />
+			<div id="royal_tree_glucksburg" class="tree" style="border:solid"> </div>
+
+			<img src="img/d3.png" alt="" class="img-responsive" />
+		</div>
+
+
+
+	</section>
+
+
+
+
+    <!-- Section: Quiz -->
+    <section id="quiz" class="home-section color-dark bg-white" style="background-image: url(./img/grey.jpg)">
+        <div class="container marginbot-50">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+                        <div class="section-heading text-center">
+                            <h2 class="h-bold">Quiz</h2>
+                            <div class="divider-header"></div>
+                            <p>We hope you had a good time learning about the royals. <br>Now it is time to prove how much
+                                you learned with the following flash cards</p>
+							<br/>
+							<img src="img/cards3.png" alt="" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.8s">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="side"><img src="./img/quiz_civ.jpg" alt="ChristianIV"></div>
+                                <div class="side back">Christian IV</div>
+                            </div>
+                        </div>
+                        <h2> What king made to build the Rosenborg palace and Børsen (among other buildings)? </h2>
+                        <p> (Hover over the image above to know the answer) </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="1.2s">
+
+
+
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="side"><img src="./img/longestDinasty.jpg" alt="Oldenburg"></div>
+                                <div class="side back">Oldenburg</div>
+                            </div>
+                        </div>
+
+                        <h2>Which danish dynasty has reigned for more years in Denmark? </h2>
+                        <p>(Hover over the image above to know the answer)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="1.6s">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="side"><img src="./img/quiz_louise.jpg" alt="LouiseAuguste"></div>
+                                <div class="side back">Princess Louise Auguste of Denmark</div>
+                            </div>
+                        </div>
+                        <h2> Which royal princess was the result from Dr. Struensee's and the queen Caroline Matilda of Great Britain's affair? </h2>
+                        <p> (Hover over the image above to know the answer) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<!-- Section: 2nd row quiz -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.8s">
+						<div class="card-container">
+							<div class="card">
+								<div class="side"><img src="./img/flagquiz.jpg" alt="ChristianIV"></div>
+								<div class="side back">Battle of Lyndanisse</div>
+							</div>
+						</div>
+						<h2> In what battle did the danish flag fell from the sky? </h2>
+						<p> (Hover over the image above to know the answer) </p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="1.2s">
+
+
+
+						<div class="card-container">
+							<div class="card">
+								<div class="side"><img src="./img/roskilde_quiz.jpg" alt=""></div>
+								<div class="side back">Roskilde</div>
+							</div>
+						</div>
+
+						<h2>From what danish city was Absalon bishop of? </h2>
+						<p>(Hover over the image above to know the answer)</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="1.6s">
+						<div class="card-container">
+							<div class="card">
+								<div class="side"><img src="./img/christian_quiz%20.jpg" alt=""></div>
+								<div class="side back">Harold Bluetooth</div>
+							</div>
+						</div>
+						<h2> Which danish king was the first in being baptised under the christian faith? </h2>
+						<p> (Hover over the image above to know the answer) </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+    </section>
+
+
+	<!-- Section: services -->
+	
+	<!-- Section: about us -->
+	<section id="contact">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.1s">
+						<div class="section-heading text-center">
+							<h2 class="h-bold"> About us </h2>
+							<div class="divider-header"></div>
+							<p> <br/>
+								This is the final project for the subject Interactive data exploration. <br/>
+								The goal of this web-page is to be a site where small interesting history stories are presented in a concise way. As from the vast history, counting on some interactive tools such as
+								family trees or barplots to explore . </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.8s">
+						<div class="service-icon">
+							<span class="fa fa-cogs fa-5x"></span> 
+						</div>
+						<h2>Quote by Winston Churchill</h2>
+						<p>"Study history, study history, in history lies all the secrets of statecraft"</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="1.2s">
+						<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.2s">
+							<img src="img/photo.jpg" alt="" class="img-responsive" />
+						</div>
+						<h2>Students</h2>
+						<p>Jesus and Tycho</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="1.6s">
+						<div class="service-icon">
+							<a href="http://kongehuset.dk/monarkiet-i-danmark/kongerakken"> <span class="fa fa-laptop fa-5x"></span> </a>
+						</div>
+						<h2>Check a complete Kongerækken (Kings-queens timeline)</h2>
+						<p>(Click on the laptop icon to go to kongehuset.dk)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<!-- Section: services -->
+	
+	
+	<div id="n">
+		
+
+	</div>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">					
+					<div class="text-center">
+						<a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+						<p>The information contained in this page has been obtained from the guide "Kings and Queens of Denmark" published by Gudrun
+							and Wikipedia. <br />
+						The free layout of the page was taken from Knight. Designed by <a href="http://bootstraptaste.com">Bootstraptaste</a></p>
+					</div>
+                    <!-- 
+                        All links in the footer should remain intact. 
+                        Licenseing information is available at: http://bootstraptaste.com/license/
+                        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=KnightOne
+                    -->
+				</div>
+			</div>	
+		</div>
+	</footer>
+	
+	<!-- Core JavaScript Files -->
+    <script src="js/jquery-2.1.1.min.js"></script>	 
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>		
+	<script src="js/functions.js"></script>
+
+
+
+
+	<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+	<script src="https://cdn.rawgit.com/ErikGartner/dTree/master/dist/dTree.min.js"></script>
+	<script>
+        d3.json("gorm_tree.json", function(error, gorm) {
+            d3.json("estridsen_tree.json", function(error, estridsen) {
+                d3.json("oldenborg_tree.json", function(error, oldenborg1) {
+                    d3.json("oldenborg_tree_part2.json", function(error, oldenborg2) {
+                        d3.json("glucksburg_tree.json", function(error, glucksburg) {
+                            if (error) throw error;
+
+                            //Build tree with the dTree library
+                            dTree.init(gorm, {
+                                target: "#royal_tree_gorm",
+                                debug: true,
+                                height: 400,
+                                width: 800,
+                                callbacks: {
+                                    nodeClick: function(name, extra) {
+                                        console.log(name);
+                                    }
+                                },
+                                margin: {
+                                    top: -50,
+                                    right: 0,
+                                    bottom: 0,
+                                    left: 0
+                                },
+                                nodeWidth: 80
+                            });
+
+
+
+                            dTree.init(estridsen, {
+                                target: "#royal_tree_estridsen",
+                                debug: true,
+                                height: 400,
+                                width: 800,
+                                callbacks: {
+                                    nodeClick: function(name, extra) {
+                                        console.log(name);
+                                    }
+                                },
+                                margin: {
+                                    top: -50,
+                                    right: 0,
+                                    bottom: 0,
+                                    left: 0
+                                },
+                                nodeWidth: 80
+                            });
+
+                            dTree.init(oldenborg1, {
+                                target: "#royal_tree_oldenborg1",
+                                debug: true,
+                                height: 400,
+                                width: 800,
+                                callbacks: {
+                                    nodeClick: function(name, extra) {
+                                        console.log(name);
+                                    }
+                                },
+                                margin: {
+                                    top: -50,
+                                    right: 0,
+                                    bottom: 0,
+                                    left: 0
+                                },
+                                nodeWidth: 80
+                            });
+
+                            dTree.init(oldenborg2, {
+                                target: "#royal_tree_oldenborg2",
+                                debug: true,
+                                height: 400,
+                                width: 800,
+                                callbacks: {
+                                    nodeClick: function(name, extra) {
+                                        console.log(name);
+                                    }
+                                },
+                                margin: {
+                                    top: -50,
+                                    right: 0,
+                                    bottom: 0,
+                                    left: 0
+                                },
+                                nodeWidth: 80
+                            });
+
+                            dTree.init(glucksburg, {
+                                target: "#royal_tree_glucksburg",
+                                debug: true,
+                                height: 400,
+                                width: 800,
+                                callbacks: {
+                                    nodeClick: function(name, extra) {
+                                        console.log(name);
+                                    }
+                                },
+                                margin: {
+                                    top: -50,
+                                    right: 0,
+                                    bottom: 0,
+                                    left: 0
+                                },
+                                nodeWidth: 80
+                            });
+
+
+
+                            //Show a portrait in the node on mouse over.
+                            d3.selectAll(".woman")
+                                .on("mouseover", function(){
+                                    d3.select(this)
+                                        .style("background-image", function(){
+                                            var image = "url('img/"+d3.select(this).text()+".jpg')";
+                                            console.log(image.replace(/(\r\n|\n|\r)/gm,""));
+                                            return image.replace(/(\r\n|\n|\r)/gm,"");//Remove whitespace from text to select picture url.
+                                        })
+                                        .style("max-width", "100%")
+                                        .style("max-height", "100%")
+                                        .style("background-size","100% 100%")
+                                        .style("text-indent", "-9999px");
+
+                                })
+                                //Restore original node on mouse out.
+                                .on("mouseout", function(){
+                                    d3.select(this)
+                                        .style("background-image", "none")
+                                        .style("max-width", "100%")
+                                        .style("max-height", "100%")
+                                        .style("background-size","100% 100%")
+                                        .style("text-indent", "0");
+                                });
+
+
+                            d3.selectAll(".man")
+                                .on("mouseover", function(){
+                                    d3.select(this)
+                                        .style("background-image", function(){
+                                            var image = "url('img/"+d3.select(this).text()+".jpg')";
+                                            console.log(image.replace(/(\r\n|\n|\r)/gm,""));
+                                            return image.replace(/(\r\n|\n|\r)/gm,"");//Remove whitespace from text to select picture url.
+                                        })
+                                        .style("max-width", "100%")
+                                        .style("max-height", "100%")
+                                        .style("background-size","100% 100%")
+                                        .style("text-indent", "-9999px");
+
+                                })
+                                //Restore original node on mouse out.
+                                .on("mouseout", function(){
+                                    d3.select(this)
+                                        .style("background-image", "none")
+                                        .style("max-width", "100%")
+                                        .style("max-height", "100%")
+                                        .style("background-size","100% 100%")
+                                        .style("text-indent", "0");
+                                });
+                        })
+                    })
+                })
+            })
+        });
+
+
+	</script>
+
+
+
+
+
+
+	<script>
+
+        var margin = {top: 80, right: 180, bottom: 80, left: 180},
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+        var svg = d3.select("body").select("#royal_barplot").select("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        d3.tsv("royal_barplot_data.tsv", function(error, data){
+            if (error) throw error;
+            // filter year
+            // Get every column value for the drop down menus
+            var elements = Object.keys(data[0])
+                .filter(function(d){
+                    return ((d != "Names") & (d != "Dynasty") & (d != "DynastyId"));
+                });
+            var elements_dynasty = ["all", "Gorm", "Estridsen", "Oldenburg", "Glucksburg"];
+
+            var selection = elements[0];
+            var selection_dynasty = elements_dynasty[0];
+
+            //scale y and x axis
+            var y = d3.scaleLinear()
+                .domain([0, d3.max(data, function(d){
+                    return +d[selection];
+                })])
+                .range([height, 0]);
+            var x = d3.scaleBand()
+                .domain(data.map(function(d){ return d.Names;}))
+                .range([0, width]);
+
+            //define y and x axis
+            var xAxis = d3.axisBottom(x);
+            var yAxis = d3.axisLeft(y);
+            //create svg
+            svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis)
+                .selectAll("text")
+                .style("font-size", "8px")
+                .style("text-anchor", "end")
+                .attr("dx", "-.8em")
+                .attr("dy", "-.55em")
+                .attr("transform", "rotate(-90)" );
+
+
+            svg.append("g")
+                .attr("class", "y axis")
+                .call(yAxis);
+
+            //add the bars of the bar plot
+            svg.selectAll("rectangle")
+                .data(data)
+                .enter()
+                .append("rect")
+                .attr("class","rectangle")
+                .attr("width", width/data.length)
+                .attr("height", function(d){
+                    return height - y(+d[selection]);
+                })
+                .attr("x", function(d, i){
+                    return (width / data.length) * i ;
+                })
+                .attr("y", function(d){
+                    return y(+d[selection]);
+                })
+                .append("title")
+                .text(function(d){
+                    return d.Names + " : " + d[selection];
+                });
+
+            //define the first dropdown menu object and it's on change effect
+            var selector = d3.select("#drop")
+                .append("select")
+                .attr("id","dropdown")
+                .on("change", function(d){
+                    selection_dynasty = document.getElementById("dropdown_dynasty");
+                    selection = document.getElementById("dropdown");
+                    var startId = -1;
+                    var maxId = 0;
+                    y.domain([0, d3.max(data, function(d,i){ //redefine y axis
+                        if(selection_dynasty.value == d.Dynasty && startId == -1){
+                            startId = i;
+                        }
+                        if(selection_dynasty.value == d.Dynasty){
+                            maxId = parseInt(d.DynastyId);
+                            return +d[selection.value];
+                        }
+                        else if(selection_dynasty.value == "all"){
+                            return +d[selection.value];
+                        }
+                    })]);
+
+                    var xdomain = data.map(function(d){ //redefine x axis
+                        if(selection_dynasty.value == d.Dynasty){
+                            return d.Names;
+                        }
+                        else if(selection_dynasty.value == "all"){
+                            return d.Names;
+                        }
+                    })
+                    console.log(maxId);
+                    console.log(startId);
+                    console.log(xdomain.slice(startId, startId+maxId+1));
+                    if(selection_dynasty.value == "all"){
+                        x.domain(xdomain);
+                    }
+                    else{
+                        x.domain(xdomain.slice(startId, startId+maxId+1));
+                    }
+
+
+
+                    d3.selectAll(".rectangle") //redraw bar plot
+                        .transition()
+                        .attr("width", function(d){
+                            if(selection_dynasty.value == d.Dynasty){
+                                return (width / (maxId+1));
+                            }
+                            else if(selection_dynasty.value == "all"){
+                                return (width / data.length);
+                            }
+                        })
+                        .attr("height", function(d){
+                            return height - y(+d[selection.value]);
+                        })
+                        .attr("x", function(d, i){
+                            if(selection_dynasty.value == d.Dynasty){
+                                return (width / (maxId+1)) * (d.DynastyId);
+                            }
+                            else if(selection_dynasty.value == "all"){
+                                return (width / data.length) * i;
+                            }
+                        })
+                        .attr("y", function(d){
+                            return y(+d[selection.value]);
+                        })
+                        //.ease("linear")
+                        .select("title")
+                        .text(function(d){
+                            return d.Names + " : " + d[selection.value];
+                        });
+                    //redraw y and x axis
+                    d3.selectAll("g.y.axis")
+                        .transition()
+                        .call(yAxis);
+                    d3.selectAll("g.x.axis")
+                        .transition()
+                        .call(xAxis)
+                        .selectAll("text")
+                        .style("font-size", "8px")
+                        .style("text-anchor", "end")
+                        .attr("dx", "-.8em")
+                        .attr("dy", "-.55em")
+                        .attr("transform", "rotate(-90)" );
+                });
+
+            //draw drop down menu
+            selector.selectAll("option")
+                .data(elements)
+                .enter().append("option")
+                .attr("value", function(d){
+                    return d;
+                })
+                .text(function(d){
+                    return d;
+                })
+
+            //define the second dropdown menu object and it's on change effect
+            var selectorDynasty = d3.select("#drop_dynasty")
+                .append("select")
+                .attr("id","dropdown_dynasty")
+                .on("change", function(d){
+                    selection_dynasty = document.getElementById("dropdown_dynasty");
+                    selection = document.getElementById("dropdown");
+                    var startId = -1;
+                    var maxId = 0;
+                    y.domain([0, d3.max(data, function(d,i){ //Redefine y axis
+                        if(selection_dynasty.value == d.Dynasty && startId == -1){
+                            startId = i;
+                        }
+                        if(selection_dynasty.value == d.Dynasty){
+                            maxId = parseInt(d.DynastyId);
+                            return +d[selection.value];
+                        }
+                        else if(selection_dynasty.value == "all"){
+                            return +d[selection.value];
+                        }
+
+                    })]);
+
+                    var xdomain = data.map(function(d){ //Redefine x axis
+                        if(selection_dynasty.value == d.Dynasty){
+                            return d.Names;
+                        }
+                        else if(selection_dynasty.value == "all"){
+                            return d.Names;
+                        }
+                    })
+                    console.log(maxId);
+                    console.log(startId);
+                    console.log(xdomain.slice(startId, startId+maxId+1));
+                    if(selection_dynasty.value == "all"){
+                        x.domain(xdomain);
+                    }
+                    else{
+                        x.domain(xdomain.slice(startId, startId+maxId+1));
+                    }
+
+
+                    //Redraw bar plot
+                    d3.selectAll(".rectangle")
+                        .transition()
+                        .attr("width", function(d){
+                            if(selection_dynasty.value == d.Dynasty){
+                                return (width / (maxId+1));
+                            }
+                            else if(selection_dynasty.value == "all"){
+                                return (width / data.length);
+                            }
+
+                        })
+                        .attr("height", function(d){
+                            return height - y(+d[selection.value]);
+                        })
+                        .attr("x", function(d, i){
+                            if(selection_dynasty.value == d.Dynasty){
+                                return (width / (maxId+1)) * (d.DynastyId);
+                            }
+                            else if(selection_dynasty.value == "all"){
+                                return (width / data.length) * i;
+                            }
+                        })
+                        .attr("y", function(d){
+                            return y(+d[selection.value]);
+                        })
+                        //.ease("linear")
+                        .select("title")
+                        .text(function(d){
+                            return d.Names + " : " + d[selection.value];
+                        });
+                    //redraw y and x axis
+                    d3.selectAll("g.y.axis")
+                        .transition()
+                        .call(yAxis);
+                    d3.selectAll("g.x.axis")
+                        .transition()
+                        .call(xAxis)
+                        .selectAll("text")
+                        .style("font-size", "8px")
+                        .style("text-anchor", "end")
+                        .attr("dx", "-.8em")
+                        .attr("dy", "-.55em")
+                        .attr("transform", "rotate(-90)" );
+                });
+            //Draw second drop down menu
+            selectorDynasty.selectAll("option")
+                .data(elements_dynasty)
+                .enter().append("option")
+                .attr("value", function(d){
+                    return d;
+                })
+                .text(function(d){
+                    return d;
+                })
+
+        });
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

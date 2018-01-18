@@ -1,0 +1,64 @@
+[{
+  "name": "Frederik V",
+  "class": "man",
+  "marriages":[{
+    "spouse": {
+      "name": "Louise of Great Britain",
+      "class": "woman"
+    },
+    "children":[{
+      "name": "Christian VII",
+      "class": "man",
+      "marriages":[{
+        "spouse": {
+          "name": "Caroline Mathilde",
+          "class": "woman"
+        },
+        "children":[{
+          "name": "Frederik VI",
+          "class": "man"
+        },
+          {
+            "name": "Louise Augusta",
+            "class": "woman"
+          }]
+      }]
+    }]
+  },
+    {
+      "spouse": {
+        "name": "Juliana Maria",
+        "class": "woman"
+      },
+      "children":[{
+        "name": "Frederik",
+        "class": "man",
+        "marriages":[{
+          "spouse": {
+            "name": "Sophia Federica",
+            "class": "woman"
+          },
+          "children":[{
+            "name": "Christian VIII",
+            "class": "man",
+            "marriages":[{
+              "spouse": {
+                "name": "Charlotte Federica",
+                "class": "woman"
+              },
+              "children":[{
+                "name": "Frederik VII",
+                "class": "man"
+              }]
+            }]
+          }]
+        }]
+
+      }]
+
+    }
+
+  ]
+
+
+}]

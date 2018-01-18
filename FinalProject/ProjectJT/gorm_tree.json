@@ -1,0 +1,80 @@
+[{
+  "name": "Gorm the Old",
+  "class": "man",
+  "marriages": [{
+      "spouse": {
+        "name": "Thyra",
+        "class": "woman"
+      },
+      "children": [
+        {
+          "name": "Harold I Bluetooth",
+          "class": "man",
+          "marriages": [{
+            "spouse": {
+              "name": "Gunhild Olafsdatter",
+              "class": "woman"
+            },
+            "children": [{
+              "name": "Sweyn I Forkbeard",
+              "class": "man",
+              "marriages":[{
+                "spouse": {
+                  "name": "Sigrid of Sweden",
+                  "class": "woman"
+                },
+                "children": [{
+                  "name": "Canute II the Great",
+                  "class": "man",
+                  "marriages": [
+                    {
+                      "spouse": {
+                        "name": "Emma of Normandy",
+                        "class": "woman"
+                      },
+                      "children":[{
+                        "name": "Canute III Hardicanute",
+                        "class": "man"}]
+                    },
+
+                    {
+                      "spouse": {
+                        "name": "Aelfgifu of Northampton",
+                        "class": "woman"
+                      },
+                      "children": [{
+                        "name": "Harold Harefoot",
+                        "class": "man"}]
+                    }
+
+                  ]
+                }]
+
+            },
+                {
+                  "spouse": {
+                    "name": "Gunhild of Wendia",
+                    "class": "woman"
+                  },
+                  "children": [
+                    {
+                      "name": "Harald III",
+                      "class": "man"
+                    }
+                  ]
+                }]
+                }
+                ]
+
+          }]
+
+        }
+      ]
+
+    }
+  ]
+}]
+
+
+
+

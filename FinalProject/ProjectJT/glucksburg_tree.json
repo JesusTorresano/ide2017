@@ -1,0 +1,111 @@
+[{
+  "name": "Christian IX",
+  "class": "man",
+  "marriages": [{
+    "spouse": {
+      "name": "Louise of Hesse-Kassel",
+      "class": "woman"
+    },
+    "children":[{
+      "name": "Frederik VIII",
+      "class": "man",
+      "marriages":[{
+        "spouse": {
+          "name": "Louise of Sweden",
+          "class": "woman"
+        },
+        "children":[{
+            "name": "Christian X",
+          "class": "man",
+          "marriages":[{
+            "spouse": {
+              "name": "Alexandrine of Mecklenburg",
+              "class": "woman"
+            },
+            "children":[{
+              "class": "man",
+              "name": "Frederik IX",
+              "marriages":[{
+                "spouse": {
+                  "name": "Ingrid of Sweden",
+                  "class": "woman"
+                },
+                "children":[{
+                  "name": "Benedikte",
+                  "class": "woman"
+                },
+                  {"name": "Anne Marie",
+                    "class": "woman"
+                  },
+                  {"name": "Margrete II",
+                    "class": "woman",
+                    "marriages":[{
+                      "spouse": {
+                        "name": "Henrik of Lamborde",
+                        "class": "man"
+                      },
+                      "children":[{
+                        "name": "Prince Frederik",
+                        "class": "man",
+                        "marriages":[{
+                          "spouse": {
+                            "name": "Mary Donaldson",
+                            "class": "woman"
+                          },
+                          "children":[{
+                            "name": "Christian",
+                            "class": "man"
+                          },{
+                            "name": "Isabella",
+                            "class": "woman"
+                          },
+                            {
+                              "name": "Vicent",
+                              "class": "man"
+                            },
+                            {
+                              "name": "Josephine",
+                              "class": "woman"
+                            }
+                          ]
+                        }]
+                      },
+                        {
+                          "name": "Joachim",
+                          "class": "man",
+                          "marriages":[{
+                            "spouse": {
+                              "name": "Alexandra Menley",
+                              "class": "woman"
+                            },
+                            "children":[{"name": "Nikolai",
+                              "class": "man"},
+                              {"name": "Felix",
+                                "class": "man"}]
+                          },{
+                            "spouse": {
+                              "name": "Marie Cavalier",
+                              "class": "woman"
+                            },
+                            "children":[{"name": "Henrik",
+                              "class": "man"},
+                              {"name": "Athena",
+                                "class": "woman"}]
+                          }
+                          ]
+                        }
+
+                      ]
+                    }]
+                  }
+                ]
+              }]
+            }]
+          }]
+        }]
+      }]
+    }]
+  }]
+
+
+}]

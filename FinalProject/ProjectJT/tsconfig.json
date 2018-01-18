@@ -1,0 +1,69 @@
+{
+  "name": "Donald Trump",
+  "class": "man",
+  "marriages": [{
+    "spouse": {
+      "name": "Ivana Trump",
+      "class": "woman"
+    },
+    "children": [{
+      "name": "Donald Trump Jr.",
+      "class": "man",
+      "marriages": [{
+        "spouse": {
+          "name": "Vanessa Trump",
+          "class": "woman"
+        },
+        "children": [{
+          "name": "Kai Madison",
+          "class": "man"
+        }, {
+          "name": "Donald III",
+          "class": "woman"
+        }, {
+          "name": "Chloe Sophia",
+          "class": "man"
+        }, {
+          "name": "Tristan Milos",
+          "class": "woman"
+        }, {
+          "name": "Spencer Frederick",
+          "class": "woman"
+        }]
+      }]
+    }, {
+      "name": "Ivanka Drumpf",
+      "class": "woman",
+      "marriages": [{
+        "spouse": {
+          "name": "Jared Kushner",
+          "class": "man"
+        },
+        "children": [{
+          "name": "Arabella Rose",
+          "class": "woman"
+        }, {
+          "name": "Joseph Frederick",
+          "class": "man"
+        }, {
+          "name": "Theodore James",
+          "class": "man"
+        }]
+      }]
+    }, {
+      "name": "Eric Drumpf",
+      "class": "woman",
+      "marriages": [{
+        "spouse": {
+          "name": "The other lady",
+          "class": "man"
+        }
+      }]
+    }]
+  }, {
+    "spouse": {
+      "name": "Someone else",
+      "class": "woman"
+    }
+  }]
+}

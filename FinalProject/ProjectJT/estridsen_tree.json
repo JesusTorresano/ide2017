@@ -1,0 +1,107 @@
+[{
+  "name": "Valdemar I",
+  "class": "man",
+  "marriages": [{
+    "spouse": {
+      "name": "Sophia of Minsk",
+      "class": "woman"
+    },
+    "children": [{
+      "name": "Canute VI",
+      "class": "man"
+    }, {
+      "name": "Valdemar II",
+      "class": "man",
+      "marriages": [{
+        "spouse": {
+          "name": "Dagmar of Bohemia",
+          "class": "woman"
+        },
+        "children":[{
+          "name": "Valdemar the Young",
+          "class": "man"
+        }]
+
+      },
+        {
+          "spouse": {
+            "name": "Berengaria of Portugal",
+            "class": "woman"
+          },
+          "children":[{
+            "name": "Eric IV",
+            "class": "man"
+          },
+            {
+              "name": "Abel I",
+              "class": "man"
+            },
+            {
+              "name": "Christopher I",
+              "class": "man",
+              "marriages": [{
+                "spouse": {
+                  "name": "Margaret Sambiria",
+                  "class": "woman"
+                },
+                "children":[{
+                  "name": "Eric V",
+                  "class": "man",
+                  "marriages": [{
+                    "spouse": {
+                      "name": "Agnes of Brandenburg",
+                      "class": "woman"
+                    },
+                    "children": [{
+                      "name": "Eric VI",
+                      "class": "man"
+                    }, { "name": "Christopher II",
+                      "class": "man",
+                      "marriages":[{
+                        "spouse": {
+                          "name": "Euphemia of Pomerania",
+                          "class": "woman"
+                        },
+                        "children":[{
+                          "name": "Valdemar IV",
+                          "class": "man",
+                          "marriages":[{
+                            "spouse": {
+                              "name": "Helvig of Schleswig",
+                              "class": "woman"
+                            },
+                            "children":[{
+                              "name": "Margrete I",
+                              "class": "woman",
+                              "marriages":[{
+                                "spouse": {
+                                  "name": "Haakon VI of Norway",
+                                  "class": "man"
+                                },
+                                "children":[{
+                                  "name": "Olaf II",
+                                  "class": "man"
+                                }]
+                              }]
+                            }]
+                          }]
+                        }]
+                      }]
+                    }
+                    ]
+                  }]
+                }]
+
+              }]
+            }
+          ]
+
+        }
+      ]
+
+    }
+
+    ]
+
+  }]
+}]
